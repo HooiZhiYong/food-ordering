@@ -1,0 +1,142 @@
+/* assets/admin_style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #eef2f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #2c3e50;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar .logo h2 {
+    color: #ecf0f1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.navbar a {
+    color: #bdc3c7;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    min-height: 80vh; 
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group { margin-bottom: 20px; }
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input, 
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fcfcfc;
+}
+
+.form-group input:focus {
+    border-color: #2c3e50;
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.btn:hover { background: #34495e; }
+
+/* action buttons */
+.btn-edit { 
+    background-color: #2980b9;
+    color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; font-size: 0.9rem;
+}
+.btn-delete { 
+    background-color: #c0392b;
+    color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; font-size: 0.9rem;
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    background: white;
+}
+
+th { 
+    background-color: #34495e;
+    color: white; 
+    padding: 15px;
+    text-align: left;
+}
+
+td { 
+    padding: 15px; 
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover { background-color: #f1f2f6; }
+
+img.thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}

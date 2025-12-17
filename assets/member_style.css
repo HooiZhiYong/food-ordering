@@ -1,0 +1,219 @@
+/* assets/style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fffbf0;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.navbar {
+    background-color: #ff9f43; 
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .logo h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: #ffeaa7;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    min-height: 80vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+    color: #e67e22;
+}
+
+
+.btn {
+    display: inline-block;
+    background: #ff9f43;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e67e22;
+}
+
+
+.success { color: #27ae60; font-weight: bold; margin-bottom: 10px; display: block; }
+.error { color: #e74c3c; font-weight: bold; margin-bottom: 10px; display: block; }
+
+
+.form-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ffeaa7; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 159, 67, 0.1); 
+}
+
+.form-group { margin-bottom: 15px; }
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #d35400;
+}
+
+.form-group input:not([type="radio"]), 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input[type="radio"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Make labels clickable and aligned */
+.form-group label:has(input[type="radio"]) {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-group input:focus {
+    border-color: #ff9f43;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 159, 67, 0.3);
+}
+
+.form-footer { margin-top: 15px; text-align: center; font-size: 0.9em; }
+.form-footer a { color: #e67e22; text-decoration: none; }
+
+/* menu grid */
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.food-card {
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(230, 126, 34, 0.15); /* Orange glow */
+    border-color: #ff9f43;
+}
+
+.food-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #fff3e0;
+}
+
+.food-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.food-card .price {
+    font-size: 1.2rem;
+    color: #e67e22;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.food-card .category {
+    font-size: 0.8rem;
+    color: #d35400;
+    background: #ffeaa7;
+    padding: 4px 10px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.food-card input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { padding: 15px; border-bottom: 1px solid #eee; text-align: left; }
+th { background-color: #ff9f43; color: white; border-radius: 5px 5px 0 0; }
+
+.cart-summary {
+    margin-top: 30px;
+    text-align: right;
+    background: #fff8e1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.grand-total {
+    color: #d35400;
+    font-size: 1.5em;
+    font-weight: bold;
+}
