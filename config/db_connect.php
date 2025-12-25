@@ -16,9 +16,9 @@ if ($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == '127.0.
 } else {
     // LIVE SETTINGS (AWS / LINUX)
     // You will fill these in when you create your RDS or EC2 database
-    $servername = "your-aws-endpoint.rds.amazonaws.com"; 
-    $username   = "admin_user"; 
-    $password   = "your_secure_password"; 
+    $servername = "maxstar-db.c8cx6xshzmz0.us-east-1.rds.amazonaws.com"; 
+    $username   = "maxstar"; 
+    $password   = "maxstar12345678"; 
     $dbname     = "food_ordering_db";
 }
 
